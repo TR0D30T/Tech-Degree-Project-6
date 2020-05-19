@@ -83,7 +83,7 @@ qwerty.addEventListener('click', (event) => {
         event.target.disabled = true;
     }
 
-    if (letterFound === null) { 
+    if (letterFound === null && event.target.tagName === "BUTTON") { 
         const lostHeart = document.getElementsByTagName('img')[missed]; //use [missed] as the index
         lostHeart.src = 'images/lostHeart.png'; // Replace old img for new one
         missed += 1; // add +1 per wrong letter to the score
