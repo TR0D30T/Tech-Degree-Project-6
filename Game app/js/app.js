@@ -78,8 +78,7 @@ qwerty.addEventListener('click', (event) => {
 
     //if button selected add class chosen  and disable it.
     if (event.target.tagName === 'BUTTON') {
-        const chosen = event.target;
-        chosen.addClass = 'chosen';
+        event.target.classList.add("chosen");
         event.target.disabled = true;
     }
 
